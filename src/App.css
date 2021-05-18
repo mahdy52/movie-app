@@ -13,11 +13,17 @@ body{
     color: white;
 }
 .acc{
+    display: flex;
+    justify-content: space-around;
+  
     font-family: fantasy;
     color: white;
+    float: left;
+    text-align: center;
     font-size: 18px;
     
 }
+
 .acc:hover{
     color: rgb(223, 46, 46);
     background-color:white;
@@ -140,7 +146,7 @@ text-shadow:0 0 20px white ;
     margin-top: 60px;
     font-size: large;
 }
-.btn{
+.btne{
     background:grey;
     opacity: 0.5;
     outline: none;
@@ -151,9 +157,10 @@ text-shadow:0 0 20px white ;
     font-size: large;
     cursor: pointer;
     transition: 0.3s ease;
+    border-radius: 20px;
     
 }
-.btn :hover{
+.btne :hover{
     background-color: black;
     color:white;
 

@@ -2,7 +2,7 @@
 import React, {useState,useEffect}from 'react'
 import {Card,Button} from 'react-bootstrap'
 
-function Filme () {
+function Filme ({input}) {
   const [film, setFilm] = useState([])
   const getFilm = ()=>{
     
@@ -15,9 +15,11 @@ function Filme () {
   },[])
 
   console.log(film)
+  
+  
   return(
     
-      film.map(el=>
+      film.filter(el=>el.title.toLowerCase().includes(input.toLowerCase())).map(el=>
       <div>
         <Card className="carde" style={{ width: '14rem'}}>
         <Card.Img className="image"variant="top" src={el.imageUrl} style={{height: '350px'}} />

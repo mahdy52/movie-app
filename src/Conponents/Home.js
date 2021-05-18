@@ -1,10 +1,21 @@
 import React from 'react';
 import{Carousel, Container} from "react-bootstrap";
 import Filme from './Serie';
-
+import Navigation from './Head';
+import { useState } from 'react';
 const Home = () => {
+  const[input,SetInput] = useState('')
+  const getInput = (e) =>{
+    SetInput (e.target.value)
+
+  }
     return (
         <div>
+          <div>
+          <Navigation getInput ={getInput}/>
+
+          </div>
+
         <div className="backgraund"> 
     <h1 className="titre">Films, séries TV et bien plus en illimité.</h1>
      <h5 className="slogon">Où que vous soyez. Annulez à tout moment.</h5>
@@ -47,7 +58,7 @@ const Home = () => {
     <hr></hr>
     <Container>
       <div className="d-flex flex-wrap justify-content-around">
-      <Filme />    
+      <Filme input ={input}/>    
       </div>
 
    </Container>

@@ -13,7 +13,7 @@ const About = () => {
              but also the leap into electronic typesetting, 
              remaining essentially unchanged.  
              </p>
-             <button class="btn" type="button">Button</button>
+             <button class="btne" type="button">Button</button>
 
         </div>
 
