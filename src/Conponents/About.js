@@ -1,8 +1,10 @@
 import React from 'react';
+import Navigation from './Head';
 
 const About = () => {
     return (
         <div>
+            <Navigation />
             <centre>
         <h3 className="about">A propos</h3>
 
@@ -13,7 +15,7 @@ const About = () => {
              but also the leap into electronic typesetting, 
              remaining essentially unchanged.  
              </p>
-             <button class="btne" type="button">Button</button>
+             <button class="btne" type="button">Lire la suite</button>
 
         </div>
 

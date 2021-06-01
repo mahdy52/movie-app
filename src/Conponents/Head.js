@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../App.css';
-import{Navbar,Form,FormControl,Button,Nav} from "react-bootstrap";
+import{Navbar,Form,Button,Nav} from "react-bootstrap";
 import {Link} from 'react-router-dom';
 
 
@@ -13,7 +13,7 @@ function Navigation({getInput}) {
   return (
     <div>
  
- <Navbar expand="lg">
+ <Navbar className="bg-grey" expand="lg">
   <Navbar.Brand className="mymy" href="#home">CinéHome</Navbar.Brand>
     <Nav className=" ml-auto">
       <Link className="acc" to="/">Accueil</Link> 

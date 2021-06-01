@@ -1,17 +1,33 @@
-import React from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import{Carousel, Container} from "react-bootstrap";
-import Filme from './Serie';
+import Movie from './Serie.js';
+import {Card,Button} from 'react-bootstrap';
 import Navigation from './Head';
 import { useState } from 'react';
+import axios from 'axios';
+
 const Home = () => {
   const[input,SetInput] = useState('')
   const getInput = (e) =>{
     SetInput (e.target.value)
-
+    
+        /******Data get****/
+   
   }
+  const [movie,setMovie] = useState([])
+    const getMovie = ()=>{
+            axios.get('http://localhost:3000/posts').then((response) =>    
+            setMovie(response.data) 
+           ) 
+    }
+  
+    useEffect(()=>
+      getMovie(),[]
+    )
     return (
         <div>
           <div>
+          
           <Navigation getInput ={getInput}/>
 
           </div>
@@ -58,7 +74,21 @@ const Home = () => {
     <hr></hr>
     <Container>
       <div className="d-flex flex-wrap justify-content-around">
-      <Filme input ={input}/>    
+
+{movie.filter(el=>el.title.toLowerCase().includes(input.toLowerCase())).map(el=>    <Card className="carde" style={{ width: '14rem'}}>
+        <Card.Img className="image"variant="top" src={el.imageUrl} style={{height: '350px'}} />
+        <Card.Body>
+        <Card.Title>{el.title}</Card.Title>
+        <Card.Text>      
+        </Card.Text>
+        <i className="far fa-star etoile"></i>
+        <Button className="button" variant="">Ajouter favorite</Button>
+        </Card.Body>
+        </Card>  )}
+
+
+     
+   
       </div>
 
    </Container>

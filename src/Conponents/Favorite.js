@@ -1,8 +1,14 @@
 import React from 'react';
+import Navigation from './Head';
+
 
 const Favorite = () => {
     return (
-        <h2>Favorite</h2>
+        <div>
+            <Navigation />
+             <h2>Favorite</h2>
+        </div>
+        
     )
 }
 export default Favorite;

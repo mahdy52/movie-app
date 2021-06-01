@@ -16,13 +16,13 @@ const Bottom = () => {
                         <div className="col-md-2 col-lg-2 mx-auto mt-3">
                             <h5 className="mb-4 font-weight-bold text-warning products">Products</h5>
                             <p>
-                                <a href="#" className="text-uppercase  text-white">The Providers</a>
+                                <a href="#"className="text-uppercase  text-white">The Providers</a>
                             </p>
                             <p>
-                                <a href="#" className=" text-uppercase  text-white">The Providers</a>
+                                <a href="#"className=" text-uppercase  text-white">The Providers</a>
                             </p>
                             <p>
-                                <a href="#" className=" text-uppercase  text-white">The Providers</a>
+                                <a href="#"className=" text-uppercase  text-white">The Providers</a>
                             </p>
                             <p>
                                 <a href="#" className="text-uppercase  text-white">The Providers</a>

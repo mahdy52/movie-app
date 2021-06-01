@@ -1,41 +1,44 @@
+import React  from 'react';
+import {Card,Button} from 'react-bootstrap';
+import axios from 'axios';
+import {useState,useEffect} from "react";
 
-import React, {useState,useEffect}from 'react'
-import {Card,Button} from 'react-bootstrap'
+function Movie ({input}) {
 
-function Filme ({input}) {
-  const [film, setFilm] = useState([])
-  const getFilm = ()=>{
-    
-    fetch('films.json').then(
-          response => response.json()).then 
-                   (movies => setFilm(movies));
-  }
-  
-  useEffect(()=> {getFilm()
-  },[])
+    /******Data get****/
+    const [film, setFilme] = useState([])
+   
+ function getfilm (){
+      axios.get('http://localhost:3000/posts')
+      .then((response) => {
+        film.push(response);
+        console.log(film)
+      });
+   }
+                
 
-  console.log(film)
-  
-  
-  return(
-    
-      film.filter(el=>el.title.toLowerCase().includes(input.toLowerCase())).map(el=>
+    useEffect( ()=> getfilm() ,[]);
+
+
+  return (
+   
+  film.filter(el=>el.title.toLowerCase().includes(input.toLowerCase())).map(el=>{
       <div>
         <Card className="carde" style={{ width: '14rem'}}>
         <Card.Img className="image"variant="top" src={el.imageUrl} style={{height: '350px'}} />
         <Card.Body>
-         <Card.Title>{el.title}</Card.Title>
+        <Card.Title>{el.title}</Card.Title>
         <Card.Text>      
-         </Card.Text>
-    <i className="far fa-star etoile"></i>
-    <Button className="button" variant="">Ajouter favorite</Button>
-  </Card.Body>
-</Card>
-     </div> 
-      )
-  
-   )
+        </Card.Text>
+        <i className="far fa-star etoile"></i>
+        <Button className="button" variant="">Ajouter favorite</Button>
+        </Card.Body>
+        </Card>
 
- }
+      </div> 
+     }
+    )
+  );
+}
 
-export default Filme;
+export default Movie ;
