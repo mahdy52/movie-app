@@ -100,15 +100,6 @@
       "rating": 4.2
     },
     {
-      "id": 14,
-      "title": "Beyond Mask",
-      "subtitle": "Vendetta",
-      "description": "Chris Redfield enlists the help of Leon S. Kennedy and Rebecca Chambers to stop a death merchant, with a vengeance, from spreading a deadly virus in New York.",
-      "year": 2014,
-      "imageUrl": "https://lh4.googleusercontent.com/proxy/-eBWxUHSi8o_kS4-lJoKxkleOEQIvnyGpWPouf9Wa9uZlj8vmnMdNcHpc-d9jh-_1bn-OCyS5BJZf5MiaWkIJ9rAkwvOiMsVs3ziUpMULbxDmy_Mf6El6-furQ=s0-d",
-      "rating": 4.2
-    },
-    {
       "id": 15,
       "title": "Destiny",
       "subtitle": "Vendetta",
@@ -154,31 +145,11 @@
       "rating": 4.2
     },
     {
-      "id": 21,
-      "title": "Ironclad",
-      "subtitle": "Vendetta",
-      "description": "Chris Redfield enlists the help of Leon S. Kennedy and Rebecca Chambers to stop a death merchant, with a vengeance, from spreading a deadly virus in New York.",
+      "title": "Ironclad v2",
       "year": 2014,
-      "imageUrl": "https://i.pinimg.com/originals/98/23/98/982398dd08fad020779c1a71ca5154e1.jpg",
-      "rating": 4.2
-    },
-    {
-      "id": 22,
-      "title": "Ironclad",
-      "subtitle": "Vendetta",
       "description": "Chris Redfield enlists the help of Leon S. Kennedy and Rebecca Chambers to stop a death merchant, with a vengeance, from spreading a deadly virus in New York.",
-      "year": 2014,
       "imageUrl": "https://i.pinimg.com/originals/98/23/98/982398dd08fad020779c1a71ca5154e1.jpg",
-      "rating": 4.2
-    },
-    {
-      "id": 23,
-      "title": "Ironclad",
-      "subtitle": "Vendetta",
-      "description": "Chris Redfield enlists the help of Leon S. Kennedy and Rebecca Chambers to stop a death merchant, with a vengeance, from spreading a deadly virus in New York.",
-      "year": 2014,
-      "imageUrl": "https://i.pinimg.com/originals/98/23/98/982398dd08fad020779c1a71ca5154e1.jpg",
-      "rating": 4.2
+      "id": 21
     }
   ],
   "comments": [],

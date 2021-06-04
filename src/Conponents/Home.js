@@ -16,7 +16,7 @@ import axios from 'axios';
   }
 const [movie,setMovie] = useState([])
 const getMovie = ()=>{
-  axios.get('http://localhost:3007/posts')
+  axios.get('http://localhost:3008/posts')
   .then((response) =>    
   setMovie(response.data) 
            ) 

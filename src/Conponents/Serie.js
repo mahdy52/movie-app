@@ -9,7 +9,7 @@ function Movie ({input}) {
     const [film, setFilme] = useState([])
    
  function getfilm (){
-      axios.get('http://localhost:3000/posts')
+      axios.get('http://localhost:3008/posts')
       .then((response) => {
         film.push(response);
         console.log(film)

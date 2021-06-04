@@ -2,6 +2,7 @@ import {useState} from 'react';
 import axios from "axios";
 import React,{ useEffect} from 'react';
 import {Card,Button} from 'react-bootstrap';
+import ModalEdit from './Edit';
 
 
 
@@ -11,7 +12,7 @@ import {Card,Button} from 'react-bootstrap';
 
 
 
-function Mahdi () {
+function Mahdi ({el}) {
   {
     const [input1, setInput1]=useState(
         {
@@ -33,7 +34,7 @@ function Mahdi () {
 /**********Get******************** */
 const [movie,setMovie] = useState([])
             const getMovie = ()=>{
-            axios.get('http://localhost:3007/posts').then((response) =>    
+            axios.get('http://localhost:3008/posts').then((response) =>    
             setMovie(response.data) 
            ) 
     }
@@ -46,14 +47,14 @@ const [movie,setMovie] = useState([])
 
              const handlesubmit=(e)=>{
             e.preventDefault();
-            axios.post(`http://localhost:3007/posts`, input1)
+            axios.post(`http://localhost:3008/posts`, input1)
             .then((res) => {
               console.log(res)
              });  }
  /***********************Remove*********** */
           
             const handleRemove =(id)=>{
-             axios.delete(`http://localhost:3007/posts/${id}` )
+             axios.delete(`http://localhost:3008/posts/${id}` )
               .then((res) => {
               console.log(res)
               
@@ -86,7 +87,7 @@ const [movie,setMovie] = useState([])
                 </form> <br></br>
                 </div>
               <div className=" omouri d-flex flex-wrap">
-                {movie.filter(el=>el.title.toLowerCase()).map(el=>   
+                {movie.map(el=>   
                 <Card  style={{ width: '14rem'}}>
                 <Card.Img className="image"variant="top" src={el.imageUrl} style={{height: '350px'}} />
                 <Card.Body>
@@ -94,9 +95,10 @@ const [movie,setMovie] = useState([])
                 <Card.Text>      
                 </Card.Text>
                 <i className="far fa-star etoile"></i>
-                
                 <Button className="button"  type="remove"  onClick={() =>handleRemove(el.id)} value="Remove" >Delete</Button>
                 
+                <ModalEdit el={el} />
+             
                 </Card.Body>
                 </Card>  )}
                 </div>
