@@ -18,6 +18,8 @@ const About = () => {
              <button class="btne" type="button">Lire la suite</button>
 
         </div>
+        <hr></hr>
+        <hr></hr>
 
 
         </centre>

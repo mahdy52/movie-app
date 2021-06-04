@@ -3,41 +3,40 @@
 
 
 //       function Moviest() {
-//           <div>
-//               <h1>hjhejkfhjkrejk</h1>
-//           </div>
-//             //  const [input1, setInput1]=useState(
-//             //   {
-//             //             title:"",
-//             //             year:"",
-//             //             genre:""
-//             //         }
-//             //     );
+        
+              
+//             const [input1, setInput1]=useState(
+//                {
+//                          title:"",
+//                          year:"",
+//                          genre:""
+//                      }
+//                  );
 
 
-//             // const handleChange = e => { 
-//             // const {name, value}=e.target
-//             //     // e.target.name=e.target.value 
-//             //     setInput1({
-//             //         ...input1,
-//             //         [name]:value
-//             //     });
-//             //     };
+//              const handleChange = e => { 
+//              const {name, value}=e.target
+//                   e.target.name=e.target.value 
+//                  setInput1({
+//                      ...input1,
+//                      [name]:value
+//                  });
+//                  };
 
-//             // const handlesubmit=(e)=>{
+//              const handlesubmit=(e)=>{
 
-//             //  e.preventDefault();
-//             //  axios.post(`http://localhost:3000/posts/`, input1).then((res) => {
-//             //  console.log(res)
-//             //  }); 
+//               e.preventDefault();
+//               axios.post(`http://localhost:3000/posts/`, input1).then((res) => {
+//               console.log(res)
+//               }); 
 
-//             //  // const handleremove = (e) => {
-//             //  //     e.preventDefault();
-//             //  //     axios.delete(http://localhost:3004/posts/, input1).then((res) => {
-//             //  //       console.log(res)
-//             //  //     });
-//             // // }
-//             // }
+//              const handleremove = (e) => {
+//                   e.preventDefault();
+//                   axios.delete(http://localhost:3004/posts/, input1).then((res) => {
+//                     console.log(res)
+//                   });
+//              }
+//             }
 
 
             

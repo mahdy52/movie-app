@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 
 
-function Navigation({getInput}) {
+function Navigation({getInput,favoriteMovie}) {
  
 
  
