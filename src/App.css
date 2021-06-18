@@ -1,49 +1,147 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color:black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.nav{
-    background-color: red;
-}
-.mymy{
+    background-image: linear-gradient(black, rgb(138, 1, 1));
     font-family: fantasy;
-    color: white;
+    font-weight: normal;
 }
-.acc{
-    display: flex;
-    justify-content: space-around;
+/*********NavBar*****/
+.navMenu {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
   
-    font-family: fantasy;
-    color: white;
-    float: left;
-    text-align: center;
-    font-size: 18px;
-    
-}
-
-.acc:hover{
-    color: rgb(223, 46, 46);
-    background-color:white;
+  .navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
     width: 80px;
-    padding: 4px;
-    padding-right: 2px;
-    border-radius: 20px;
-    text-decoration-line: none;
-}
-.chercher{
-    border-radius: 30px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 35px;
+  }
+  
+  .navMenu a:hover {
+    color: #fd3a3a;
+  }
+  
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #fd3a3a;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navMenu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(30px);
+    transform: translateX(60px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    
+  }
+  
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(110px);
+    transform: translateX(180px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(200px);
+    transform: translateX(300px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(285px);
+    transform: translateX(285px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+   
+  
+  .search {
+    margin: 20px;
+  }
+  
+  .search > h3 {
+    font-weight: normal;
+  }
+  
+  .search > h1,
+  .search > h3 {
     color: white;
-    font-family: fantasy;
-    border-color: white;
-}
-.chercher:hover{
-    background-color:white;
-    border-color: white;
-    color: red;
-}
+    margin-bottom: 15px;
+    text-shadow: 0 1px #0091c2;
+  }
+  
+  .search > div {
+    display: inline-block;
+    position: relative;
+    filter: drop-shadow(0 1px #0091c2);
+  }
+  
+  .search > div:after {
+    content: "";
+    background: white;
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    
+    transform: rotate(135deg);
+  }
+  
+  .search > div > input {
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: solid 3px white;
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+  }
+  
+  .search > div > input::placeholder {
+    color: #efefef;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+  }
+  
+  .search > div > input:focus::placeholder {
+    opacity: 1;
+  }
+  
+  .search > div > input:focus,
+  .search > div > input:not(:placeholder-shown) {
+    width: 250px;
+  }
+  
+
+/********endNavBar**********/
 
 .backgraund{
 background-image:url("https://images.pexels.com/photos/2376994/pexels-photo-2376994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940%22");
@@ -63,6 +161,7 @@ color: wheat;
 
 
 }
+
 .slogon{
  position: absolute;
 margin-top: 320px;
@@ -86,30 +185,45 @@ text-shadow:0 0 20px white ;
     width: 500px;
     margin-top: 60px;
     margin-left: 250px;
+    border-radius: 40px;
+        
     
+}
+.CaousselPicture{
+    border-radius: 40px;
+    width: 500px;
+    box-shadow: 0px 0px 15px 5px rgb(248, 243, 243);
+
 }
 .etoile{
     color: red;
 }
 .carde{
+   margin-bottom: 30px;
     width: 14rem;
     height: 30rem;
     align-items: center;
-    box-shadow: 0px 0px 15px 5px rgb(252, 40, 40);
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
+    justify-content: space-between;
+    margin: left 15px;
 }
 .image{
     border-radius: 20px;
 }
 .button{
     color:black;
+    font-size: medium;
     
 
 }
 .button:hover{
-    color:black;
-    background-color: red;
-    border: solid red;
+    color:white;
+    font-family: fantasy;
+    background-color:#cf0000;
+    border: solid #cf0000;
     border-radius: 20px;
+    font-weight: bolder;
     
     
 
@@ -197,4 +311,7 @@ text-shadow:0 0 20px white ;
     justify-content: space-around;
     margin-left: 250px;
 
+}
+.fouter{
+    height: 300px;
 }

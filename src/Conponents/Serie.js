@@ -30,7 +30,10 @@ function Movie ({input}) {
         <Card.Title>{el.title}</Card.Title>
         <Card.Text>      
         </Card.Text>
-        <i className="far fa-star etoile"></i>
+        
+          <progress value="65" max="100"> </progress>
+           
+        {/* <i className="far fa-star etoile"></i> */}
         <Button className="button" variant="">Ajouter favorite</Button>
         </Card.Body>
         </Card>

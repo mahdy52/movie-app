@@ -42,25 +42,40 @@ const getMovie = ()=>{
                   <p>Téléchargez vos séries préférées pour les regarder hors connexion.
                    Enregistrez vos programmes préférés et ayez toujours quelque chose à regarder.</p>
                 </div>
-                   <div>
-                      <Carousel className="koua">
-                      <Carousel.Item>
-                      <img className="d-block w-100"src="https://back.femininbio.com/attachments/2020/11/20/portrait/w800/31382-capture-decran-2020-03-18-a-17-49-48.png"alt="First slide" />
+                   <div className="koua"> 
+                      <Carousel className="">
+                      <Carousel.Item className="">
+                      <img className=" CaousselPicture d-block w-100"src="https://dvdtoile.com/FILMS/70/70331.jpg"alt="First slide" />
                       <Carousel.Caption>
             
                       </Carousel.Caption>
                       </Carousel.Item>
                       <Carousel.Item>
-                        <img className="d-block w-100 "src="https://flixpatrol.com/runtime/cache/files/posters/x/w350/xgwvjewoxnjhvxkw619cmzppjdq.jpg"alt="Second slide"/>
+                        <img className=" CaousselPicture d-block w-100 "src="https://images-na.ssl-images-amazon.com/images/I/71F6O5u-dzL._AC_SL1124_.jpg"alt="Second slide"/>
                       <Carousel.Caption>
                       </Carousel.Caption>
                       </Carousel.Item>
+
                       <Carousel.Item>
-                      <img className="d-block w-100"src="https://www.dreadcentral.com/wp-content/uploads/2020/09/repossession.jpg"alt="Third slide"/>
+                        <img className=" CaousselPicture d-block w-100 "src="https://media.services.cinergy.ch/media/box1600/d2c3f0c1a56d8e3b98857efce65c8496d4e8c602.jpg"alt="Second slide"/>
+                      <Carousel.Caption>
+                      </Carousel.Caption>
+                      </Carousel.Item>
+
+                      <Carousel.Item>
+                        <img className=" CaousselPicture d-block w-100 "src="https://media2.woopic.com/api/v1/images/174%2Faudiovisual%2Fmovie%2F5b7%2F28a%2F706e4da7e50744e0344fe4cdb4%2Fbad-boys-for-life%7Cmovies-172048-21682855.jpg?facedetect=1&quality=8"alt="Second slide"/>
+                      <Carousel.Caption>
+                      </Carousel.Caption>
+                      </Carousel.Item>
+                     
+                     
+                      <Carousel.Item>
+                      <img className=" CaousselPicture d-block w-100"src="http://media2.woopic.com/api/v1/images/174%2Faudiovisual%2Fmovie%2F7e0%2F37f%2F0aa1bd3f0ff8da267972afced6%2Fkingsman-le-cercle-d-or%7Cmovies-237561-21436828.jpg?format=600x900&facedetect=1&quality=85"alt="Third slide"/>
                       <Carousel.Caption>
                       </Carousel.Caption>
                       </Carousel.Item>
                       </Carousel>
+
                     </div>
                       <hr></hr>
                       <Container>

@@ -12,25 +12,37 @@ function Navigation({getInput,favoriteMovie}) {
  
   return (
     <div>
+
+
+        
  
- <Navbar className="bg-grey" expand="lg">
-  <Navbar.Brand className="mymy" href="#home">CinéHome</Navbar.Brand>
-    <Nav className=" ml-auto">
-      <Link className="acc" to="/">Accueil</Link> 
-      <Link className="acc" to="/About">/A propos</Link>
-      <Link className="acc" to="/Favorite">/Favorite</Link>
-    </Nav>
-    <Form inline>
-    <input type="text" placeholder="Search" onChange = {getInput}/>
+    
+
+    {/* <input type="text" placeholder="Search" onChange = {getInput}/>
       <Button  className="chercher"variant="outline-success" placeholder="cherchher ici...">Chercher</Button>
-    </Form>
-  
-</Navbar>
-  
-  
-    
+     */}
+
+<div class="flexbox">
+  <div class="search">
+   
+    <div>
+      <input type="text" placeholder="Search . . ." required onChange = {getInput} />
     </div>
-    
+  </div>
+</div>
+
+      <nav className="navMenu ">
+          <Link to="/">Accueil</Link>
+          
+          <Link to="/About">Apropos</Link> 
+
+          <Link to="/Favorite">Favorite</Link>
+
+          <div class="dot"></div>
+        </nav> 
+
+  
+ </div>
   )
   
   
